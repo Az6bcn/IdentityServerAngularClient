@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  getClientSettings: {
+      authority: 'http://localhost:5000', // AuthServer URL, Identity Server URL (OIDC/OAuth2 provider)
+      client_id: 'AngularClientApp', // client id as registered with Identity Server i.e OIDC/OAuth2 provider.
+      redirect_uri: 'http://localhost:4200/auth-callback', // The redirect URI of this client application to receive a response from Identity Server i.e OIDC/OAuth2 provider.
+      response_type: 'id_token token', // The type of response desired from Identity Server i.e OIDC/OAuth2 provider.
+      post_logout_redirect_uri: 'http://localhost:4200/',
+      filterProtocolClaims: false,
+      loadUserInfo: true,
+      automaticSilentRenew: true,
+      scope: 'openid profile email userrole api.read' // Scopes being requested from Identity Server i.e OIDC/OAuth2 provider.
+  },
 };
 
 /*
