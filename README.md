@@ -1,7 +1,10 @@
 # IdentityServer4ClientApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
-
+Angular client app to connect to Identity Server Authorization Server, to authenticate user and get access token (with users claims) to access WebAPI. Using oidc-client library to provide OpenID Connect (OIDC) and OAuth2 protocol support for client-side, browser-based JavaScript client applications:
+### github:
+https://github.com/IdentityModel/oidc-client-js
+### Doc:
+https://github.com/IdentityModel/oidc-client-js/wiki
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
